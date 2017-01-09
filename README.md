@@ -1,5 +1,4 @@
-# Maestro's Hiring Challenge
-So you want to be a Maestronaut? We’re very proud of the team we have built and the direction we are heading as an organization. As we continue to grow, we are excited to bring on more devs to drive our cause. If you’re up for the challenge, maybe you’ll be the next to join our team and help us drive the future of JavaScript, while knocking out beautiful, performance-driven applications for our clients.
+# A Better Commenting System  
+When I'm reading comments on the internet, I get frustrated that there is so little contextual specificity available to them. A two or three page article might have hundreds of specifically commentable snippets of text, any of which might be contradictory, objectionable, laudible, in or out of agreement with the others, or otherwise contextually relevent. Nonetheless, all the comments appear after the peice and they retain few visual cues about where in the piece they are referring.
 
-
-[Backend Challenge](https://github.com/TeamMaestro/hiring-challenge/blob/master/backend.md)
+I therefore propose a better commenting system, which catalogs comments with a reference to a particular text section. Comments then appear alongside the text, and comments on comments expand laterally. Many comments on a specific section of text can be ranked, (by likes or dislikes), and the most popular comments can float to the top of the comments for a particular section.
