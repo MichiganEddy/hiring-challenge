@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "removeComments": false,
+    "outDir": "./public/javascripts",
+    "pretty": true
+  },
+  "files": [
+    "./typeScripts/Article.ts",
+    "./typeScripts/Comment.ts",
+    "./typeScripts/User.ts"
+  ]
+}
