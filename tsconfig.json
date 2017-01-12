@@ -8,6 +8,7 @@
   "files": [
     "./typeScripts/Article.ts",
     "./typeScripts/Comment.ts",
-    "./typeScripts/User.ts"
+    "./typeScripts/User.ts",
+    "./typeScripts/Note.ts"
   ]
 }
