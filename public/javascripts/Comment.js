@@ -1,5 +1,5 @@
-var Comment = (function () {
-    function Comment() {
+var Commen = (function () {
+    function Commen() {
     }
-    return Comment;
+    return Commen;
 }());
