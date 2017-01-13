@@ -4,9 +4,16 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require('express-session')({ secret: 'secret salt', resave: true, saveUninitialized: true});
-var passport = require('passport');
 
+var session = require('express-session')({ secret: 'temporary_secret_salt', resave: true, saveUninitialized: true}); // Better Salts need to be implemented
+var passport = require('passport');
+var localStrategy = require('passport-local').Strategy;
+var bcrypt = require('bcrypt'); 
+const saltRounds = 10;
+    
+
+// DB Implentation not completed.
+var db = require('./javascripts/db');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -16,6 +23,28 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+// Simple Username Password Authentication Method.
+passport.use(new Strategy(
+  function(username, password, callback){
+    db.users.findByUsername(username, function(err, user){
+      if(err) { return callback(err); }
+      if(!user) { return callback(null, false); }
+      if(user.password !== password) { return callback(null, false); }
+      return callback(null, user);
+    });
+}));
+
+passport.serializeUser(function(user, callback){
+  callback(null, user.id);
+});
+
+passport.deserializeUser(function(id, callback){
+  db.users.findById(id, function(err, user) {
+    if(err) {return callback(err); }
+    callback(null, user);
+  });
+});
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));

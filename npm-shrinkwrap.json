@@ -407,6 +407,26 @@
         }
       }
     },
+    "passport": {
+      "version": "0.3.2",
+      "from": "passport@0.3.2",
+      "resolved": "./node_shrinkwrap/passport-0.3.2.tar"
+    },
+    "passport-local": {
+      "version": "1.0.0",
+      "from": "passport-local@>=1.0.0 <2.0.0",
+      "resolved": "./node_shrinkwrap/passport-local-1.0.0.tar"
+    },
+    "passport-strategy": {
+      "version": "1.0.0",
+      "from": "passport-strategy@>=1.0.0 <2.0.0",
+      "resolved": "./node_shrinkwrap/passport-strategy-1.0.0.tar"
+    },
+    "pause": {
+      "version": "0.0.1",
+      "from": "pause@0.0.1",
+      "resolved": "./node_shrinkwrap/pause-0.0.1.tar"
+    },
     "pug": {
       "version": "2.0.0-beta6",
       "from": "pug@>=2.0.0-beta6 <2.1.0",
