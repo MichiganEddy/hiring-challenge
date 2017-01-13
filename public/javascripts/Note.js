@@ -1,12 +1,8 @@
+// The note class is the base class for any kind of annotation, be it posting an
+// article, commenting on an article, or commenting on a comment. 
 var Note = (function () {
-    function Note(id, titl, refs, top, content, writerID, words) {
+    function Note(id) {
         this.id = id;
-        this.title = titl;
-        this.referencing = refs;
-        this.topic = top;
-        this.content = content;
-        this.writerID = writerID;
-        this.keywords = words || new Array();
     }
     return Note;
 }());

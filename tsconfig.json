@@ -3,7 +3,8 @@
     "module": "commonjs",
     "removeComments": false,
     "outDir": "./public/javascripts",
-    "pretty": true
+    "pretty": true,
+    "lib": "es2015"
   },
   "files": [
     "./typeScripts/Article.ts",
