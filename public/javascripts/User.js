@@ -1,4 +1,5 @@
 "use strict";
+var bcrypt = require("bcryptjs");
 var User = (function () {
     function User(userName, email, password, firstName, lastName) {
         this.userName = userName;
@@ -30,7 +31,15 @@ var User = (function () {
     // Salt function to be implemented, currently returns a random string.
     // Not suitable for production use!
     User.getSalt = function () {
-        return "FakeSalt";
+        return bcrypt.genSaltSync(10);
+    };
+    User.passwordHash = function (password, salt, callback) {
+        return bcrypt.hash(password, salt, function (err, hash) {
+            if (err) {
+                callback(err);
+            }
+            callback(hash);
+        });
     };
     return User;
 }());

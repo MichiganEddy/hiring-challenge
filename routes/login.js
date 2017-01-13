@@ -12,9 +12,11 @@ router.use(["/login", "/user/:id", "/user/new-user", "/article/new-article", "/a
       passport.authenticate('local', function(err, user, info) {
       if(err) { return next(err)};
       if(!user) {
-        res.flash return res.redirect('/login');}
-      req.logIn(user, function(err){
-        if(err) { return next(err); }
+        res.flash('Error logging in.', 'Incorrect Username or Password.');
+                  return res.redirect('/login');}
+        req.logIn(user, function(err){
+          if(err) { res.flash('Error Logging in.', 'User not found');
+                    return next(err); }
         return res.redirect('/users/' + user.userName );
       });
       

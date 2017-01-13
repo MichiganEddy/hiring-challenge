@@ -45,6 +45,14 @@ class User{
   // Salt function to be implemented, currently returns a random string.
   // Not suitable for production use!
   private static getSalt(): string {
-    return "FakeSalt";
+    return bcrypt.genSaltSync(10);
   }
+  
+  private static  passwordHash(password, salt, callback): void{
+    return bcrypt.hash(password, salt, function(err, hash){
+      if(err) { callback(err); }
+      callback(hash);
+    });
+  }
+  
 }
