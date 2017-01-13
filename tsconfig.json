@@ -10,6 +10,7 @@
     "./typeScripts/Article.ts",
     "./typeScripts/Comment.ts",
     "./typeScripts/User.ts",
-    "./typeScripts/Note.ts"
+    "./typeScripts/Note.ts",
+    "./node_modules/@types/bcryptjs/index.d.ts"
   ]
 }

@@ -1,4 +1,4 @@
-import bcrypt = require('');
+import * as bcrypt from "bcryptjs";
 
 class User{
   public readonly userName: string;
