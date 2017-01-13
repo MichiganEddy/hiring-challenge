@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var session = require('express-session')({ secret: 'secret salt', resave: true, saveUninitialized: true}));
+var session = require('express-session')({ secret: 'secret salt', resave: true, saveUninitialized: true});
 var passport = require('passport');
 
 
