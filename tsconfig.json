@@ -1,10 +1,13 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
+    "types" : ["node", "express", "mongoose"],
     "module": "commonjs",
     "removeComments": false,
     "outDir": "./typeScripts/es2015",
     "pretty": true,
-    "lib": ["es2015", "dom"]
+    "lib": ["es2015", "dom"],
+    "sourceMap": true
   },
   "files": [
     "./typeScripts/Article.ts",

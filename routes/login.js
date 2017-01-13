@@ -22,9 +22,7 @@ router.use(["/login", "/user/:id", "/user/new-user", "/article/new-article", "/a
       
     })(req, res, next);
   }); 
-    successRedirect: '/',
-    failureRedirect: '/login'})
-     
+       
 
 
 module.exports = router;
