@@ -5,7 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var session = require('express-session')({ secret: 'temporary_secret_salt', resave: true, saveUninitialized: true}); // Better Salts need to be implemented
+var session = require('express-session')({ 
+      cookie: { maxAge: 60*60*4},
+      secret: 'temporary_secret_salt', // Bcrypt Salts Need to be added!
+      resave: true, saveUninitialized: true});
 var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcrypt'); 
