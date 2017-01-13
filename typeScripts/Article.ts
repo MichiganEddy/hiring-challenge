@@ -4,6 +4,8 @@ class Article extends Note{
   
   
   
+  
+  
   // Getters and Setters to complete implementation of Note-- needs to be abstracted out, but I've got bigger fish to fry right now...
     // id
   getid(): string {

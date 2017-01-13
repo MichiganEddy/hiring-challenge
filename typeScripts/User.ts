@@ -1,11 +1,11 @@
 class User{
-  public userName: string;
+  public readonly userName: string;
   private password: string;
-  private salt: string;
+  private readonly salt: string;
   private email: string;
   private firstName: string; 
   private lastName: string;
-  private comments: Commen[];
+  private comments: string[];
   
   constructor(userName: string, email: string, password: string, firstName: string, lastName: string){
     this.userName = userName;
@@ -18,6 +18,24 @@ class User{
   
   getFullName(): string {
     return this.firstName + " " + this.lastName;
+  }
+  setFullName(first: string, last: string): null{
+    this.firstName = first;
+    this.lastName = last;
+    return null;
+  }
+  
+  getEmail(): string{
+    return this.email;
+  }
+  setEmail(address: string): null{
+    this.email = address;
+    return null;
+  }
+  
+  addComment(commentID: string): null{
+    this.comments.push(commentID);
+    return null;
   }
   
   
