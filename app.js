@@ -14,14 +14,19 @@ var localStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcrypt'); 
 
 
-const saltRounds = 10;
-    
-
 // DB Implentation not completed.
 var db = require('./javascripts/db');
 
+
+// Import the routes files. 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var login = require('./routes/login');
+var logout = require('./routes/logout');
+var userShow = require('./routes/userView');
+var newUser = require('./routes/newUser');
+var newArticle = require('./routes/newArticle');
+var articleShow = require('/routes/')
 
 var app = express();
 
@@ -62,8 +67,17 @@ app.use(session);
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+
+
+// Give all the routes to the app. 
 app.use('/', index);
 app.use('/users', users);
+app.use('/login', login);
+app.use('/logout', logout);
+app.use('user/:id', userShow);
+app.use('user/new', newUser);
+app.use('article/new', newArticle);
+app.use('article/:id', articleShow);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
