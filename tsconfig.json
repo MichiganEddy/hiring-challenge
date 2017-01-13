@@ -4,7 +4,7 @@
     "removeComments": false,
     "outDir": "./public/javascripts",
     "pretty": true,
-    "lib": "es2015"
+    "lib": ["es2015", "dom"]
   },
   "files": [
     "./typeScripts/Article.ts",

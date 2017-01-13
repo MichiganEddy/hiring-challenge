@@ -1,3 +1,5 @@
+import bcrypt = require('');
+
 class User{
   public readonly userName: string;
   private password: string;

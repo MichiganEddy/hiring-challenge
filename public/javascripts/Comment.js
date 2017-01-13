@@ -7,7 +7,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Commen = (function (_super) {
     __extends(Commen, _super);
     function Commen() {
-        return _super.apply(this, arguments) || this;
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     // Getters and Setters for Note 
     // id

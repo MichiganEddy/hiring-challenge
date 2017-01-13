@@ -1,3 +1,4 @@
+"use strict";
 var User = (function () {
     function User(userName, email, password, firstName, lastName) {
         this.userName = userName;
