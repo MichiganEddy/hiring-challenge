@@ -7,7 +7,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Article = (function (_super) {
     __extends(Article, _super);
     function Article() {
-        return _super !== null && _super.apply(this, arguments) || this;
+        return _super.apply(this, arguments) || this;
     }
     // Getters and Setters to complete implementation of Note-- needs to be abstracted out, but I've got bigger fish to fry right now...
     // id
@@ -86,3 +86,4 @@ var Article = (function (_super) {
     };
     return Article;
 }(Note));
+//# sourceMappingURL=Article.js.map

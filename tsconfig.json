@@ -6,14 +6,20 @@
     "removeComments": false,
     "outDir": "./typeScripts/es2015",
     "pretty": true,
-    "lib": ["es2015", "dom"],
-    "sourceMap": true
+    "lib": ["ES2015", "ES2016". "ES2017", "DOM", "DOM.Iterable", "ScriptHost", "ES2015.COllection", "ES2015.Promise", "ES2015.Reflect", "ES2015.Symbol", "ES2015.Iterable", "ES2015.Generator", "ES2015.Core"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true, 
+    
   },
   "files": [
     "./typeScripts/Article.ts",
     "./typeScripts/Comment.ts",
     "./typeScripts/User.ts",
     "./typeScripts/Note.ts",
-    "./node_modules/@types/bcryptjs/index.d.ts"
+    "./node_modules/@types/bcryptjs/index.d.ts" 
+  ], 
+  "include": [
+    "./node_modules/@types"
   ]
 }

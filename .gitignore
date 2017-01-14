@@ -29,3 +29,6 @@ node_shrinkwrap
 
 # Debug log from npm
 npm-debug.log
+
+# Temporary Files
+tmp
