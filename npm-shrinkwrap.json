@@ -124,10 +124,20 @@
       "from": "basic-auth@>=1.0.3 <1.1.0",
       "resolved": "./node_shrinkwrap/basic-auth-1.0.4.tar"
     },
+    "bcrypt": {
+      "version": "0.8.7",
+      "from": "bcrypt@>=0.8.7 <0.9.0",
+      "resolved": "./node_shrinkwrap/bcrypt-0.8.7.tar"
+    },
     "bcryptjs": {
       "version": "2.4.0",
       "from": "bcryptjs@>=2.4.0 <3.0.0",
       "resolved": "./node_shrinkwrap/bcryptjs-2.4.0.tar"
+    },
+    "bindings": {
+      "version": "1.2.1",
+      "from": "bindings@1.2.1",
+      "resolved": "./node_shrinkwrap/bindings-1.2.1.tar"
     },
     "body-parser": {
       "version": "1.15.2",
@@ -138,6 +148,16 @@
       "version": "1.1.6",
       "from": "brace-expansion@>=1.0.0 <2.0.0",
       "resolved": "./node_shrinkwrap/brace-expansion-1.1.6.tar"
+    },
+    "bson": {
+      "version": "1.0.4",
+      "from": "bson@>=1.0.4 <1.1.0",
+      "resolved": "./node_shrinkwrap/bson-1.0.4.tar"
+    },
+    "buffer-shims": {
+      "version": "1.0.0",
+      "from": "buffer-shims@>=1.0.0 <2.0.0",
+      "resolved": "./node_shrinkwrap/buffer-shims-1.0.0.tar"
     },
     "bytes": {
       "version": "2.4.0",
@@ -236,6 +256,11 @@
       "from": "core-js@>=2.4.0 <3.0.0",
       "resolved": "./node_shrinkwrap/core-js-2.4.1.tar"
     },
+    "core-util-is": {
+      "version": "1.0.2",
+      "from": "core-util-is@>=1.0.0 <1.1.0",
+      "resolved": "./node_shrinkwrap/core-util-is-1.0.2.tar"
+    },
     "debug": {
       "version": "2.2.0",
       "from": "debug@>=2.2.0 <2.3.0",
@@ -285,6 +310,11 @@
       "version": "4.0.1",
       "from": "es6-error@latest",
       "resolved": "./node_shrinkwrap/es6-error-4.0.1.tar"
+    },
+    "es6-promise": {
+      "version": "3.2.1",
+      "from": "es6-promise@3.2.1",
+      "resolved": "./node_shrinkwrap/es6-promise-3.2.1.tar"
     },
     "es6-shim": {
       "version": "0.35.2",
@@ -401,6 +431,11 @@
       "from": "is-regex@>=1.0.3 <2.0.0",
       "resolved": "./node_shrinkwrap/is-regex-1.0.3.tar"
     },
+    "isarray": {
+      "version": "1.0.0",
+      "from": "isarray@1.0.0",
+      "resolved": "./node_shrinkwrap/isarray-1.0.0.tar"
+    },
     "js-stringify": {
       "version": "1.0.2",
       "from": "js-stringify@>=1.0.1 <2.0.0",
@@ -491,6 +526,16 @@
       "from": "mkdirp@>=0.5.1 <0.6.0",
       "resolved": "./node_shrinkwrap/mkdirp-0.5.1.tar"
     },
+    "mongodb": {
+      "version": "2.2.21",
+      "from": "mongodb@>=2.2.10 <3.0.0",
+      "resolved": "./node_shrinkwrap/mongodb-2.2.21.tar"
+    },
+    "mongodb-core": {
+      "version": "2.1.6",
+      "from": "mongodb-core@2.1.6",
+      "resolved": "./node_shrinkwrap/mongodb-core-2.1.6.tar"
+    },
     "morgan": {
       "version": "1.7.0",
       "from": "morgan@>=1.7.0 <1.8.0",
@@ -500,6 +545,11 @@
       "version": "0.7.1",
       "from": "ms@0.7.1",
       "resolved": "./node_shrinkwrap/ms-0.7.1.tar"
+    },
+    "nan": {
+      "version": "2.3.5",
+      "from": "nan@2.3.5",
+      "resolved": "./node_shrinkwrap/nan-2.3.5.tar"
     },
     "negotiator": {
       "version": "0.6.1",
@@ -556,6 +606,16 @@
       "from": "passport-strategy@>=1.0.0 <2.0.0",
       "resolved": "./node_shrinkwrap/passport-strategy-1.0.0.tar"
     },
+    "passwordless-mongostore": {
+      "version": "0.1.4",
+      "from": "node_shrinkwrap/passwordless-mongostore-0.1.4.tar",
+      "resolved": "./node_shrinkwrap/passwordless-mongostore-0.1.4.tar"
+    },
+    "passwordless-tokenstore": {
+      "version": "0.0.10",
+      "from": "passwordless-tokenstore@0.0.10",
+      "resolved": "./node_shrinkwrap/passwordless-tokenstore-0.0.10.tar"
+    },
     "path-is-absolute": {
       "version": "1.0.1",
       "from": "path-is-absolute@>=1.0.0 <2.0.0",
@@ -575,6 +635,11 @@
       "version": "0.1.6",
       "from": "private@>=0.1.6 <0.2.0",
       "resolved": "./node_shrinkwrap/private-0.1.6.tar"
+    },
+    "process-nextick-args": {
+      "version": "1.0.7",
+      "from": "process-nextick-args@>=1.0.6 <1.1.0",
+      "resolved": "./node_shrinkwrap/process-nextick-args-1.0.7.tar"
     },
     "promise": {
       "version": "7.1.1",
@@ -673,6 +738,11 @@
       "from": "raw-body@>=2.1.7 <2.2.0",
       "resolved": "./node_shrinkwrap/raw-body-2.1.7.tar"
     },
+    "readable-stream": {
+      "version": "2.1.5",
+      "from": "readable-stream@2.1.5",
+      "resolved": "./node_shrinkwrap/readable-stream-2.1.5.tar"
+    },
     "regenerator-runtime": {
       "version": "0.10.1",
       "from": "regenerator-runtime@>=0.10.0 <0.11.0",
@@ -688,15 +758,30 @@
       "from": "repeating@>=2.0.0 <3.0.0",
       "resolved": "./node_shrinkwrap/repeating-2.0.1.tar"
     },
+    "require_optional": {
+      "version": "1.0.0",
+      "from": "require_optional@>=1.0.0 <1.1.0",
+      "resolved": "./node_shrinkwrap/require_optional-1.0.0.tar"
+    },
     "resolve": {
       "version": "1.2.0",
       "from": "resolve@>=1.1.6 <2.0.0",
       "resolved": "./node_shrinkwrap/resolve-1.2.0.tar"
     },
+    "resolve-from": {
+      "version": "2.0.0",
+      "from": "resolve-from@>=2.0.0 <3.0.0",
+      "resolved": "./node_shrinkwrap/resolve-from-2.0.0.tar"
+    },
     "right-align": {
       "version": "0.1.3",
       "from": "right-align@>=0.1.1 <0.2.0",
       "resolved": "./node_shrinkwrap/right-align-0.1.3.tar"
+    },
+    "semver": {
+      "version": "5.3.0",
+      "from": "semver@>=5.1.0 <6.0.0",
+      "resolved": "./node_shrinkwrap/semver-5.3.0.tar"
     },
     "send": {
       "version": "0.14.1",
@@ -744,6 +829,11 @@
       "version": "1.3.1",
       "from": "statuses@>=1.3.1 <2.0.0",
       "resolved": "./node_shrinkwrap/statuses-1.3.1.tar"
+    },
+    "string_decoder": {
+      "version": "0.10.31",
+      "from": "string_decoder@>=0.10.0 <0.11.0",
+      "resolved": "./node_shrinkwrap/string_decoder-0.10.31.tar"
     },
     "strip-ansi": {
       "version": "3.0.1",
@@ -794,6 +884,11 @@
       "version": "1.0.0",
       "from": "unpipe@1.0.0",
       "resolved": "./node_shrinkwrap/unpipe-1.0.0.tar"
+    },
+    "util-deprecate": {
+      "version": "1.0.2",
+      "from": "util-deprecate@>=1.0.1 <1.1.0",
+      "resolved": "./node_shrinkwrap/util-deprecate-1.0.2.tar"
     },
     "utils-merge": {
       "version": "1.0.0",

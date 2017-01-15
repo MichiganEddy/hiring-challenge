@@ -7,6 +7,14 @@
               "es2015-constants",
               "es2015-for-of",
               "es2015-classes",
-              "es2015-parameters"
-            ]
+              "es2015-parameters",
+              "object-rest-spread",
+              "decorators",
+              "es2015 destructuring",
+              "class-properties",
+              "dynamic-import",
+              "async-generators"
+            ],
+  "comments": true,
+  
 }
